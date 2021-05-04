@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="con-search notValue"> 
+    <h1>    Telephone Directory</h1><br>
+        <div class="con-input">
+            <input 
+                onblur="handleBlur()" 
+                onfocus="handleFocus(event)" 
+                placeholder="Search User" 
+                oninput="handleSearch(event)" 
+                type="text">
+            <i class='bx bx-search'></i>
+            <i onclick="handleRemove()" class='bx bx-x' ></i>
+        </div>
+        <div class="content-results">
+            <div class="con-results"></div>
+            <div class="not-results">Not Results</div>
+        </div>
+    </div>
+  <script  src="script.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script><link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+</body>
+</html>
